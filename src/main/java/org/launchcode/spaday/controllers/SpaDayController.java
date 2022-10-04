@@ -9,6 +9,11 @@ import java.util.ArrayList;
 @Controller
 public class SpaDayController {
 
+    ArrayList<String> facials = new ArrayList<>();
+    facials.add("Microdermabrasion");
+    facials.add("HydroFacial");
+    facials.add("Rejuvinating");
+
     public boolean checkSkinType(String skinType, String facialType) {
         if (skinType.equals("oily")) {
             return facialType.equals("Microdermabrasion") || facialType.equals("Rejuvenating");
